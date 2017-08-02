@@ -1,0 +1,32 @@
+public class HelperClassGenerator {
+
+	/**
+	 * Name of property in PROPERTIES_FILE whose value is a path to a CACS Application Descriptor.
+	 */
+	private static final String APPLICATION_DESCRIPTOR_PROPERTY = "application.descriptor"; //$NON-NLS-1$
+
+	private static final String HELPER_CLASS_NAME_PROPERTY = "helper.class.name";
+
+	private static final String HELPER_CLASS_PACKAGE_PROPERTY = "helper.class.package";
+
+	private static final String HELPER_CLASS_SRC_PROPERTY = "helper.class.src";
+
+	/** Properties file in which *all* properties must appear. Must be on classpath at run time */
+	private static final String PROPERTIES_FILE = "helper_class_generator.properties"; //$NON-NLS-1$
+
+	/**
+	 * Name of property in PROPERTIES_FILE whose value is a path to the XML Schema for CACS
+	 * Application Descriptors
+	 */
+	private static final String SCHEMA_PROPERTY = "cacs.schema"; //$NON-NLS-1$
+
+	/**
+	 * Prefixed to beginning of each line of code, as many times as the current indent level
+	 * requires
+	 */
+	private static final String INDENT = "    ";
+
+	public static void main(String[] args) {
+		HelperClassGenerator generator = new HelperClassGenerator();
+		generator.generate(args);
+	}
