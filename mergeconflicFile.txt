@@ -18,7 +18,9 @@ public class HelperClassGenerator {
 	 * Name of property in PROPERTIES_FILE whose value is a path to the XML Schema for CACS
 	 * Application Descriptors
 	 */
-	private static final String SCHEMA_PROPERTY = "cacs.schema"; //$NON-NLS-1$
+
+	private static final String SHUMA_PROPERTY = "cacs.schema"; //$NON-NLS-1$
+
 
 	/**
 	 * Prefixed to beginning of each line of code, as many times as the current indent level
