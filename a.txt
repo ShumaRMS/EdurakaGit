@@ -1,3 +1,5 @@
 Line 1
 
-line2 
+line3
+
+and removed line2
